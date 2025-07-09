@@ -1,0 +1,6 @@
+models/
+*.zip
+*.tflite
+*.h5
+*.db
+__pycache__/
