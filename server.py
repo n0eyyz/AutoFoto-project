@@ -11,12 +11,13 @@ MODEL_DIR = "models"
 ALLOWED_MODELS = [
     "mobilenetv2.zip",
     "efficientnet_lite.zip",
-    "resnet50.zip"
+    "resnet50.zip",
+    "clipvision.zip"
 ]
 
 @app.get("/models")
 def models():
-    return ("efficientnet_lite.zip", "mobilenetv2.zip", "resnet50.zip")
+    return ("efficientnet_lite.zip", "mobilenetv2.zip", "resnet50.zip", "clipvision.zip")
 
 @app.get("/download-model")
 def download_model(model_name: str):
